@@ -51,13 +51,11 @@ Para instalar **Mi Organizador**, sigue estos pasos:
 4. Envía tus cambios (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
-## Licencia
 
-**Mi Organizador** está licenciado bajo la [MIT License](LICENSE).
 
 ## Contacto
 
-Para cualquier consulta o comentario, por favor contacta a [tu_email@dominio.com](mailto:tu_email@dominio.com).
+Para cualquier consulta o comentario, por favor contacta a [gabrielmedinadev@gmail.com](mailto:gabrielmedinadev@gmail.com).
 
 ---
 
