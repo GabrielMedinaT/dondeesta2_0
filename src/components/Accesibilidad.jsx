@@ -17,7 +17,7 @@ const Accesibilidad = ({
   const [botonesVisibles, setBotonesVisibles] = useState(false);
   //*FUNCION PARA AUMENTAR EL ESPACIADO ENTRE LETRAS
   const aumentarEspaciado = () => {
-    if (espaciado === 8) {
+    if (espaciado === 7) {
       setEspaciado(2);
     } else {
       setEspaciado((prevEspaciado) => (prevEspaciado + 2) % 10);
