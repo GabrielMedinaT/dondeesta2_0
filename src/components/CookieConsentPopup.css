@@ -1,0 +1,25 @@
+/* CookieConsentPopup.css */
+.cookie-popup {
+  position: fixed;
+  bottom: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.cookie-popup p {
+  margin: 0;
+}
+
+.cookie-popup button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}

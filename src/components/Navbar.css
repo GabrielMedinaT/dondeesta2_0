@@ -1,0 +1,140 @@
+/* NavBar.css */
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2vh 8vw;
+  background-color: #3a3a3a;
+  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 10;
+}
+#home-button {
+  margin-right: auto;
+}
+.menu-desplegable {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 8vw;
+  margin-top: 2vh;
+}
+.letreroInicio {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+/* Estilos para los botones del NavBar */
+.botones {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.6s, transform 0.6s;
+  color: #fff;
+}
+
+.navbar-button:hover {
+  background-color: #e3e3e3;
+  transform: scale(1.05);
+  border: solid 1px #424242;
+  color: #3a3a3a;
+  -webkit-box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.9);
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.nav-loggin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background-image: url("../sources/icons/hogar.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.letreroInicio h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+@media (min-width: 769px) {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .botones {
+    display: none;
+  }
+
+  .menu-desplegable {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 0;
+    background-color: #3a3a3a;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+    z-index: 9;
+  }
+
+  .menu-desplegable.active {
+    display: block;
+  }
+
+  .menu-desplegable a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

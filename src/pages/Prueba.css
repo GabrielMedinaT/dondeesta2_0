@@ -1,0 +1,64 @@
+.acordeones {
+  width: 70%;
+  max-width: 100%;
+  min-height: 200vh;
+  max-height: 300vh;
+  margin: 100px;
+  padding: 0;
+  list-style: none;
+
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.choza {
+  width: 100%;
+  max-width: 100%;
+  background-image: url("../sources/images/iconoCasa.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  height: 50px;
+  margin: 0 auto;
+  background-position: right;
+  font-size: 32px;
+}
+.almacen {
+  width: 100%;
+  max-width: 100%;
+  background-image: url("../sources/images/iconoAlmacen.png");
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position: right;
+}
+.tienda {
+  width: 100%;
+  max-width: 100%;
+  background-image: url("../sources/images/tienda.png");
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position: right;
+}
+.trastero {
+  width: 100%;
+  max-width: 100%;
+  background-image: url("../sources/images/trastero.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: right;
+}
+.habitacion {
+  width: 100%;
+  max-width: 100%;
+  background-image: url("../sources/images/iconoHabitacion.jpg");
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position: right;
+}
+.oficina {
+  width: 100%;
+  max-width: 100%;
+  height: 10vh;
+  background-image: url("../sources/images/oficina.png");
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position: right;
+}

@@ -1,0 +1,255 @@
+/* Estilos para el contenedor de accesibilidad */
+
+.container-accesibilidad {
+  max-width: 50vw;
+  margin-top: 30vh;
+  position: fixed;
+  top: 0;
+  left: 10;
+  right: 0;
+  bottom: 0;
+  margin-right: 5vh;
+  z-index: 1;
+}
+
+.botones-accesibilidad {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  background-image: url("../sources/images/accesibilidad.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center;
+  border-radius: 75%;
+  transition: transform 0.3s ease;
+}
+.visible {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  background-image: url("../sources/images/accesibilidad.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center;
+  border-radius: 75%;
+  transition: transform 0.3s ease;
+}
+.visible:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.botones-accesibilidad:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el botón de accesibilidad cuando es visible */
+.botones-accesibilidad.visible {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Estilos para mostrar los botones cuando son visibles */
+.botones-accesibilidad.visible .botonesAnimados {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  pointer-events: auto; /* Habilitar interacción con los botones visibles */
+  transition: all 0.5s ease; /* Transición suave para mostrar y ocultar los botones */
+}
+
+/* Estilos para ocultar los botones */
+.botones-accesibilidad .botonesAnimados {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none; /* Deshabilitar interacción con los botones ocultos */
+  transition: all 0.5s ease; /* Transición suave para mostrar y ocultar los botones */
+}
+
+/* Estilos para los botones animados */
+.boton-letra {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/iconoLetra.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  margin-top: -160px;
+  left: 25px;
+  transition: all 1s ease;
+  z-index: -3;
+}
+.boton-letra:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.boton-letra-oculto {
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/iconoLetra.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  margin-top: -10vh;
+  left: 25px;
+  transition: all 1s ease;
+  pointer-events: none;
+  z-index: -3;
+}
+
+.boton-espaciado {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/Espaciado.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  transition: all 1s ease;
+  margin-top: -140px;
+  margin-right: 200px;
+  left: -35px;
+  z-index: -3;
+}
+.boton-espaciado:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.boton-espaciado-oculto {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/Espaciado.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  margin-top: -6vh;
+  left: 25px;
+  pointer-events: none;
+  z-index: -3;
+}
+.boton-dislexia {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/dislexia.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  transition: all 1s ease;
+  margin-top: -80px;
+  margin-right: 200px;
+  left: -55px;
+  z-index: -3;
+}
+.boton-dislexia-oculto {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/Espaciado.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  margin-top: -6vh;
+  left: 25px;
+  pointer-events: none;
+  z-index: -3;
+}
+.boton-cursor {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/iconocursor.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  transition: all 1s ease;
+  margin-top: -15px;
+  margin-right: 200px;
+  left: -35px;
+  z-index: -3;
+}
+.boton-cursor-oculto {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/iconocursor.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  margin-top: -6vh;
+  left: 25px;
+  pointer-events: none;
+  z-index: -3;
+}
+.boton-invertir {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/invertir.png");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center;
+  transition: all 1s ease;
+  margin-top: 5px;
+  margin-right: 200px;
+  left: 25px;
+  z-index: -3;
+}
+.boton-invertir-oculto {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../sources/images/iconocursor.png");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center;
+  margin-top: -6vh;
+  left: 25px;
+  pointer-events: none;
+  z-index: -3;
+}
+
+@media (max-width: 768px) {
+  .container-accesibilidad {
+    max-width: 70vw;
+    margin-top: 20vh;
+  }
+
+  .botones-accesibilidad {
+    width: 80px;
+    height: 80px;
+  }
+
+  .botonesAnimados button.boton-letra,
+  .botonesAnimados button.boton-espaciado {
+    width: 40px;
+    height: 40px;
+  }
+}

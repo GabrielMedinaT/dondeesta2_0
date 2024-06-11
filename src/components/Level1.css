@@ -1,0 +1,115 @@
+.casas {
+  margin-top: 10px;
+}
+
+.arc {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+.agregarCasa {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.agregarCasa h1 {
+  margin-bottom: 30px;
+}
+
+.agregarCasa button {
+  background-image: url("../sources/images/iconoAgregar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.agregarCasa button:hover {
+  transform: scale(1.1);
+  background-color: #4caf50; /* Verde */
+  box-shadow: #4caf50 0px 0px 20px;
+}
+
+.casasLista {
+  list-style: none;
+  padding: 0;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.miscasas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2.5vh;
+  align-items: center;
+  width: 90%; /* Usamos porcentajes para el ancho */
+  height: 30%; /* Usamos porcentajes para la altura */
+  max-width: 200%; /* El máximo ancho también se define en porcentaje */
+  max-height: 100%; /* El máximo alto también se define en porcentaje */
+  border-radius: 5px;
+  padding: 2%; /* Ajustamos el padding si es necesario */
+  background-color: #f3f3f3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.miscasas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.eliminarCasa {
+  padding: 5px 10px;
+  margin-left: 120px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  background-image: url("../sources/images/eliminar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+}
+
+.eliminarCasa:hover {
+  background-color: #b71c1c; /* Rojo más oscuro */
+  box-shadow: #b71c1c 0px 0px 10px;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
